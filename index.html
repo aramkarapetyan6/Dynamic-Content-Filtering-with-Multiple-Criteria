@@ -7,18 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="center-block">
-        <div id="checkboxes">
-            <input type="checkbox" class="cb" value="eco-friendly">Eco Friendly
-            <br>
-            <input type="checkbox" class="cb" value="new">New
-            <br>
-            <input type="checkbox" class="cb" value="sale">Sale
-        </div>
-        <div id="products">
-
+    <div id="filter">
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="">All</option>
+            <option value="Home">Home</option>
+            <option value="Apparel">Apparel</option>
+            <option value="Electronics">Electronics</option>
+        </select>
+        <br>
+        <label>Tags:</label>
+        <div id="tags">
+            <input type="checkbox" id="eco-friendly" value="eco-friendly">
+            <label for="eco-friendly">Eco-friendly</label>
+            <input type="checkbox" id="new" value="new">
+            <label for="new">New</label>
+            <input type="checkbox" id="sale" value="sale">
+            <label for="sale">Sale</label>
         </div>
     </div>
+
+    <div id="products"></div>
 
     <script src="./script.js"></script>
 </body>
